@@ -19,6 +19,7 @@ bin_PROGRAMS+= clients/memping
 bin_PROGRAMS+= clients/memrm 
 bin_PROGRAMS+= clients/memslap 
 bin_PROGRAMS+= clients/memstat
+bin_PROGRAMS+= clients/memset
 
 if BUILD_MEMASLAP
 if HAVE_LIBEVENT
@@ -103,6 +104,9 @@ clients_memcapable_SOURCES+= clients/memcapable.cc
 clients_memcapable_SOURCES+= libmemcached/byteorder.cc
 clients_memcapable_LDADD= $(CLIENTS_LDADDS)
 clients_memcapable_LDADD+= @PTHREAD_LIBS@
+
+clients_memset_SOURCES= clients/memset.cc
+clients_memset_LDADD= $(CLIENTS_LDADDS)
 
 test-start-server:
 	clients/memflush --servers=localhost

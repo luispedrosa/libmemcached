@@ -51,6 +51,7 @@ clients/memrm
 clients/memslap
 clients/memstat
 clients/memtouch
+clients/memset
 config.log
 config.status
 config/compile
