@@ -3,6 +3,7 @@
 *.exe
 *.gz
 *.lo
+*.o
 *.orig
 *.output
 *.pop
@@ -65,6 +66,7 @@ configure
 configure.scan
 docs/*.[13]
 docs/*.html
+docs/build/
 docs/changes
 docs/conf.py
 docs/doctest/
@@ -72,6 +74,7 @@ docs/doctrees/
 docs/html/
 docs/linkcheck/
 docs/text
+docs/source/conf.py
 example/memcached_light
 example/t/memcached_light
 libhashkit-1.0/configure.h
